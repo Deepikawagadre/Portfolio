@@ -1,0 +1,147 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #fff0f5;
+  color: #333;
+  scroll-behavior: smooth;
+  font-size: 18px;
+}
+
+section {
+  padding: 100px 20px;
+  min-height: 100vh;
+}
+
+.hero {
+  text-align: center;
+  background: linear-gradient(to right, #ffccd5, #ffe6f0);
+  animation: fadeIn 1s ease-in;
+}
+
+.profile-img {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  border: 6px solid #ff8ab0;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+h1 span {
+  color: #ff4d88;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 15px 30px;
+  background: #ff4d88;
+  color: white;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+  font-size: 1.1rem;
+}
+
+.btn:hover {
+  background: #e60073;
+}
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.skills-grid span {
+  background: #ffd9e6;
+  padding: 15px 25px;
+  border-radius: 25px;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-size: 1.3rem;
+  margin-top: 30px;
+}
+
+.social-links a {
+  color: #ff4d88;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #e60073;
+}
+
+footer {
+  text-align: center;
+  padding: 30px;
+  background: #ffe6f0;
+  font-size: 1.1rem;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(20px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
+body.dark {
+  background: #1e1e2f;
+  color: #f0f0f0;
+}
+
+body.dark .hero {
+  background: linear-gradient(to right, #2a2a40, #3e3e5e);
+}
+
+body.dark .btn {
+  background: #bb86fc;
+  color: #000;
+}
+
+body.dark .btn:hover {
+  background: #9a6dff;
+}
+
+body.dark .skills-grid span {
+  background: #3e3e5e;
+  color: #f0f0f0;
+}
+
+body.dark .social-links a {
+  color: #bb86fc;
+}
+
+body.dark footer {
+  background: #2e2e3e;
+}
+
+#theme-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: #ff4d88;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  z-index: 1000;
+}
